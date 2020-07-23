@@ -15,13 +15,16 @@
     <header id="main-header">
 
         <!-- Main Nav Bar -->
-        <nav id="main-navbar" class="flex items-center justify-around w-full text-white bg-black">
+        <nav class="flex items-center justify-around w-full text-white bg-black">
             <a href="#"><i class="fas fa-bars"></i></a>
             <a href="#"><i class="fas fa-user"></i></a>
             <img class="text-black" src="{% static '/img/logo.png' %}" alt="Apparelised logo">
             <a href="#"><i class="fas fa-search"></i></a>
             <a href="#"><i class="fas fa-shopping-bag"></i></a>
         </nav>
+
+        <!-- Store Product Header -->
+        <h1 class="py-8 text-3xl font-semibold text-center uppercase">{% block header %}{% endblock %}</h1>
 
         <!-- Store Nav Bar -->
         <div id="navbar" class="flex flex-col w-full">
@@ -39,7 +42,6 @@
     </header>
 
         <!-- Main Content -->
-        <h1 class="py-8 text-3xl font-semibold text-center uppercase">{% block header %}{% endblock %}</h1>
     {% block content %}
     {% endblock %}
     
@@ -124,6 +126,6 @@
 
         </div>
     </footer>
-    <script src="{% static '/js/home.js' %}"></script>
+    <script src="{% static '/js/nav.js' %}"></script>
 </body>
 </html>
