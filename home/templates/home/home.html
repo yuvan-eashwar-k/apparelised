@@ -1,0 +1,26 @@
+{% extends 'home/layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Home Content -->
+
+<section>
+    <div id="navbar" class="flex flex-col w-full">
+        
+        <!-- Home Nav -->
+        <nav class="py-4 overflow-x-auto text-white bg-black" >
+            <div class="container flex justify-around mx-auto overflow-x-auto text-sm sm:text-base md:text-lg">
+                <a class="font-bold uppercase" href="#">Home</a>
+                <a class="font-bold uppercase" href="#">Tshirts</a>
+                <a class="font-bold uppercase" href="#">Crop Tops</a>
+                <a class="font-bold uppercase" href="#">Hoodies</a>
+                <a class="font-bold uppercase" href="#">Sweatshirt</a>
+            </div>
+        </nav>
+
+    </div>
+</section>
+
+<script src="{% static '/js/home.js' %}"></script>
+{% endblock %}

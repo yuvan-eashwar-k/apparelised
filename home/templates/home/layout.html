@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/output.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <title>Apparelised | </title>
+</head>
+<body class="box-border p-0 m-0 font-assistant">
+
+    <!--Main Header -->
+    <header id="main-header">
+
+        <!-- Main Nav Bar -->
+        <nav id="main-navbar" class="flex items-center justify-around w-full text-white bg-black">
+            <a href="#"><i class="fas fa-bars"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <img class="text-black" src="{% static '/img/logo.png' %}" alt="Apparelised logo">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+    </header>
+
+        <!-- Main Content -->
+    {% block content %}
+    {% endblock %}
+    
+        <!-- Pages Section -->
+    <section id="pages" class="pt-12 pb-8 bg-gray-800">
+        <div class="container mx-auto">
+            <div id="grid-container" class="grid grid-cols-1 leading-relaxed sm:grid-cols-2 lg:grid-cols-4">
+                <div id="gird-items" class="p-8 text-white">
+                    <i class="self-center fas fa-3x fa-truck"></i>
+                    <div>
+                        <h1 class="text-2xl font-bold uppercase">Cash on delivery and express free shipping</h1>
+                        <p class="mt-2">We provide express free shipping and cash on deliver all over india</p>
+                        <button class="px-6 py-2 mt-4 font-bold text-black uppercase transition-all duration-500 ease-in-out bg-gray-100 rounded-lg hover:bg-black hover:text-white">Shipping Policy</button>
+                    </div>
+                </div>
+                <div id="gird-items" class="p-8 text-white">
+                    <i class="self-center fas fa-3x fa-headset"></i>
+                    <div>
+                        <h1 class="text-2xl font-bold uppercase">Support 24/7</h1>
+                        <p class="mt-2">Contact us 24 hours a day,7 days a week.You can contact us any time you want.We provide you with all the essential information.</p>
+                        <button class="px-6 py-2 mt-4 font-bold text-black uppercase transition-all duration-500 ease-in-out bg-gray-100 rounded-lg hover:bg-black hover:text-white">Contact us</button>
+                    </div>
+                </div>
+                <div id="gird-items" class="p-8 text-white">
+                    <i class="self-center fas fa-3x fa-share"></i>
+                    <div>
+                        <h1 class="text-2xl font-bold uppercase">15 day exchange</h1>
+                        <p class="mt-2">Simply exchange your products within 15 days</p>
+                        <button class="px-6 py-2 mt-4 font-bold text-black uppercase transition-all duration-500 ease-in-out bg-gray-100 rounded-lg hover:bg-black hover:text-white">Exchange Policy</button>
+                    </div>
+                </div>
+                <div id="gird-items" class="p-8 text-white">
+                    <i class="self-center fas fa-3x fa-lock"></i>
+                    <div>
+                        <h1 class="text-2xl font-bold uppercase">Safe and Secure checkout</h1>
+                        <p class="mt-2">Our checkout is SSL encrypted. Our payment providers are mentioned below</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="main-links" class="py-8 bg-black">
+        <div class="container mx-auto">
+            <div id="grid-container" class="grid grid-cols-1 leading-loose text-white bg-black sm:grid-cols-2 lg:grid-cols-4">
+                <div id="grid-item" class="flex flex-col px-8 py-4">
+                    <img class="w-64" src="{% static '/img/logo.png' %}" alt="Apparelised logo">
+                    <a class="inline-block mt-4 text-xl transition-all duration-300 ease-in hover:opacity-75" href="mailto:apparelised@gmail.com"><i class="fas fa-at"></i> apparelised@gmail.com</a>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="tel:8754507030"><i class="fas fa-phone"></i> +91 8754507030</a>
+                </div>
+    
+                <div id="grid-item" class="flex flex-col px-8 py-4">
+                    <h1 class="text-3xl font-bold">Quick Links</h1>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="#">About Us</a>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="#">Contact Us</a>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="#">Terms of Service</a>
+                </div>
+    
+                <div id="grid-item" class="flex flex-col px-8 py-4">
+                    <h1 class="text-3xl font-bold">Policy</h1>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="#">Privacy Policy</a>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="#">Exchange Policy</a>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="#">Shipping Policy</a>
+                </div>
+    
+                <div id="grid-item" class="flex flex-col px-8 py-4">
+                    <h1 class="text-3xl font-bold">Follow Us</h1>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="facebook.com" target="_blank"><i class="fab fa-facebook"></i> FaceBook</a>
+                    <a class="inline-block text-xl transition-all duration-300 ease-in hover:opacity-75" href="instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Main Footer -->
+    <footer id="main-footer" class="p-10 text-center text-white bg-gray-900">
+        <div>
+            <p class="text-xl">Copyright &copy; Apparelised</p>
+        </div>
+        <div>
+
+        </div>
+    </footer>
+</body>
+</html>
